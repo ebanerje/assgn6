@@ -8,6 +8,7 @@
     	 <meta name="author" content="Eshita Banerjee">
     	<title>Bun Bun Bake Shop | Pumpkin Spice</title>
     	<link rel="stylesheet" href="./css/style.css">
+        <script type="text/javascript" src="main.js"></script>
     </head>
     <body>
     	<header>
@@ -22,6 +23,8 @@
     					<li><a href="products.html">Products</a></li>
                         <li><img src = "img/search.png" alt = "search"></li>
                         <li><a href="cart.html"><img src ="img/cart.png" alt = "cart"></a></li>
+                        <li><a href="cart.html"><img src ="img/counter.png" alt = "num"></a></li>
+                        <span id="counter">0</span>
     				</ul>
     			</nav>
     		</div>
@@ -32,10 +35,11 @@
                 <img class="productsPageImg" src="img/productsPage.jpg" alt="pumpkinspice">
                 <h1 class="productTitle">Pumpkin Spice</h1>
                 <p class="productDescription">Cinnamon buns get a fall makeover in this nutty and spiced version.</p>
-                <p class="productDescription">Price: $3.75 per bun.</p>
+                <p class="productDescription">Price: $3.00 per bun.</p>
 
                 <label class= "qAndG" for="quantity">QUANTITY</label>
-                <select class="dropdowns" id="quantity">
+                <select class="dropdowns" id="quantity" onchange="totalPrice()">
+                  <option value="0">-</option>
                   <option value="1">1 Roll</option>
                   <option value="3">3 Rolls</option>
                   <option value="6">6 Rolls</option>
@@ -44,14 +48,16 @@
 
                 <label class= "qAndG" for="glazing">GLAZING</label>
                 <select class="dropdowns" id="glazing">
-                  <option value="none">None</option>
+                  <option value="none" >None</option>
                   <option value="sugarMilk">Sugar-Milk</option>
                   <option value="vanillaMilk">Vanilla-Milk</option>
                   <option value="doubleChocolate">Double-Chocolate</option>
                 </select>
 
+                <p class="totalPrice">Total Price: $<span id="totalPriceVal"></span></p>
+
                 <div class = "wrap">
-                    <a id="addtocart" href = "">ADD TO CART</a>
+                    <button id="addtocart" onclick="addToCounter()">ADD TO CART</button>
                 </div>
 
             </div>

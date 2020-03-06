@@ -22,12 +22,39 @@
     					<li><a href="products.html">Products</a></li>
                         <li><img src = "img/search.png" alt = "search"></li>
                         <li><a href="cart.html"><img src ="img/cart.png" alt = "cart"></a></li>
+                        <span id="counter"></span>
     				</ul>
     			</nav>
     		</div>
     	</header>
 
-    	
+    	<div class = "columnCart">
+            <div id="cartLeftText">
+                <p id="shopCartTxt">Shopping Cart</p>
+                <div class="back">
+                    <a href="products.html"><p> < Back to Shopping </p></a>
+                </div>
+            </div>
+
+            <!-- Creating an additional card for Order Summary details -->
+            <div class="orderDetailsCard">
+                <p id=cartProdName> Order Summary</p>
+                    <div class="orderSummaryLeft">
+                        <p> Subtotal </p>
+                        <p> Shipping Fee</p>
+                        <p> Estimated Tax</p>
+                        <h3> Total</h3> 
+                    </div>
+                    <div class="orderSummaryRight">
+                        <h4> </h4>
+                        <p id="subtotal">$0.00</p>
+                        <p id="shippingfee">$2.99</p>
+                        <p id="EstTax">$0.00</p>
+                        <h3 id="total">$2.99</h3>
+                        <button id=checkoutBtn type="button">CHECKOUT</button> 
+                    </div>
+            </div>
+        </div>
 
     	<footer>
     		<p>Bun Bun Bake Shop, Copyright &copy; 2020</p>
