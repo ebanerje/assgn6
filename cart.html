@@ -1,61 +1,74 @@
 <!DOCTYPE html>
 <html>
     <head>
-    	<meta charset="utf-8">
-    	<meta name="viewport" content="width=device=width">
-    	 <meta name="description" content="Bun Bun Bake Shop Website">
-    	 <meta name="keywords" content="bakery, buns, bun bun bake shop">
-    	 <meta name="author" content="Eshita Banerjee">
-    	<title>Bun Bun Bake Shop | Cart</title>
-    	<link rel="stylesheet" href="./css/style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device=width">
+         <meta name="description" content="Bun Bun Bake Shop Website">
+         <meta name="keywords" content="bakery, buns, bun bun bake shop">
+         <meta name="author" content="Eshita Banerjee">
+        <title>Bun Bun Bake Shop | Pumpkin Spice</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <script type="text/javascript" src="main.js" async=""></script>
     </head>
     <body>
-    	<header>
-    		<div class="container">
-    			<div id="branding">
-    				<h1><span class="current"><a href="index.html">Bun Bun Bake Shop</a></span></h1>
-    			</div>
-    			<nav>
-    				<ul>
-    					<li><a href="contact.html">Contact Us</a></li>
-    					<li><a href="about.html">About</a></li>
-    					<li><a href="products.html">Products</a></li>
+        <header>
+            <div class="container">
+                <div id="branding">
+                    <h1><span class="current"><a href="index.html">Bun Bun Bake Shop</a></span></h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
                         <li><img src = "img/search.png" alt = "search"></li>
                         <li><a href="cart.html"><img src ="img/cart.png" alt = "cart"></a></li>
                         <li><a href="cart.html"><img src ="img/counter.png" alt = "num"></a></li>
-                        <span id="counter"></span>
-    				</ul>
-    			</nav>
-    		</div>
-    	</header>
+                        <a id = "counter" href="cart.html"><span>0</span></a>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
     	<div class = "columnCart">
             <div id="cartLeftText">
                 <p id="shopCartTxt">Shopping Cart</p>
+                <div id="cart-container">
+                    <table id="cartInfo">
+                        <tr>
+                            <th></th>
+                            <th> Roll </th>
+                            <th> Glaze </th>
+                            <th> Quantity </th>
+                            <th> Price </th>
+                        </tr>
+                    </table>
+                </div>
+                <div id="total"> </div><br>
                 <div class="back">
                     <a href="products.html"><p> < Back to Shopping </p></a>
                 </div>
             </div>
-
             <!-- Creating an additional card for Order Summary details -->
+            <!--
             <div class="orderDetailsCard">
                 <p id=cartProdName> Order Summary</p>
                     <div class="orderSummaryLeft">
                         <p> Subtotal </p>
                         <p> Shipping Fee</p>
-                        <p> Estimated Tax</p>
                         <h3> Total</h3> 
                     </div>
+
                     <div class="orderSummaryRight">
                         <h4> </h4>
                         <p id="subtotal">$0.00</p>
                         <p id="shippingfee">$2.99</p>
-                        <p id="EstTax">$0.00</p>
-                        <h3 id="total">$2.99</h3>
+                        <h3 id="checkoutPrice">$2.99</h3>
                         <button id=checkoutBtn type="button">CHECKOUT</button> 
                     </div>
             </div>
         </div>
+    -->
 
     	<footer>
     		<p>Bun Bun Bake Shop, Copyright &copy; 2020</p>
